@@ -53,6 +53,18 @@ public class Launch {
         }
         System.out.println("Second Max Value: "+secMaxVal);
     }
+
+    static void getPeakElement(int arr[], int n) {
+        for (int i = 1; i < arr.length-1; i++) {
+            int elm = arr[i];
+            int nextElm = arr[i+1];
+            int prevElm = arr[i-1];
+            if(elm > nextElm && elm > prevElm) {
+                System.out.println("Peak element:  "+elm);
+                break;
+            }
+        }
+    }
     public static void main(String[] args) {
 
         /*
@@ -92,9 +104,13 @@ public class Launch {
        
         /*
          * Q5: Given an array. Find the first peak element in the array. A peak element is an element that is greater than its just left and just right neighbor.
-         
+        
+            int arr[] = {1,4,7,3,2,6,5};
+            int arr[] = {1,3,2,6,5};
+            Launch.getPeakElement(arr, arr.length);
+            
          */
-       
+   
 
     }
 }
