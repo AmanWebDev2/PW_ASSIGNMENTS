@@ -2,10 +2,6 @@ package DSA_02_Searching_sorting_and_bit_manipulation.Assignment_02_Sorting_Arra
 
 import java.util.Arrays;
 
-/*
- * Q1. Write a program to sort an array in descending order using bubble sort.
-    Input Array {3,5,1,6,0}
- */
 public class Sort {
     public static void main(String[] args) {
         int arr[] =  {3,5,1,6,0};
